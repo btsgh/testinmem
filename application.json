@@ -18,6 +18,10 @@
   "icon": "server-line",
   "pages": [
     {
+      "id": "Customer messaging",
+      "isDefault": false
+    },
+    {
       "id": "Schedule",
       "isDefault": false
     },

@@ -1,0 +1,276 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 56,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "id",
+    "name",
+    "avatar",
+    "sms_number",
+    "whatsapp_number",
+    "customColumn1",
+    "customColumn2"
+  ],
+  "columnSizeMap": {
+    "customColumn1": 228,
+    "id": 60,
+    "name": 265,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'XXX XXX ' + currentRow.sms_number.slice(-4)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "SMS",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    },
+    "customColumn2": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'XXX XXX ' + currentRow.whatsapp_number.slice(-4)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn2",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "WhatsApp",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn2.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.whatsapp_number.computedValue"
+    },
+    {
+      "key": "primaryColumns.sms_number.computedValue"
+    },
+    {
+      "key": "primaryColumns.avatar.computedValue"
+    },
+    {
+      "key": "primaryColumns.name.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "7uh3yaf8s2",
+  "label": "Data",
+  "leftColumn": 0,
+  "multiRowSelection": true,
+  "onPageChange": "{{getCustomerInfo.run()}}",
+  "onRowSelected": "{{storeValue('no',Table1.selectedRows)}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "ae88b63qxw",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "avatar": {
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "avatar",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "avatar1",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'XXX XXX ' + currentRow.sms_number.slice(-4)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "SMS",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    },
+    "customColumn2": {
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'XXX XXX ' + currentRow.whatsapp_number.slice(-4)))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn2",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "WhatsApp",
+      "labelColor": "#FFFFFF",
+      "width": 150
+    },
+    "id": {
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "ID",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "name": {
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "name",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Name",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "sms_number": {
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sms_number))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "sms_number",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "sms1",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "whatsapp_number": {
+      "columnType": "text",
+      "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.whatsapp_number))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "whatsapp_number",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "WhatsApp1",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "searchTags": [
+    "datagrid"
+  ],
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{getCustomerInfo.data}}",
+  "textSize": "0.875rem",
+  "topRow": 5,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "azwb6udoms",
+  "widgetName": "Table1"
+}

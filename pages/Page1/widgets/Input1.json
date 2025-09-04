@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -37,6 +42,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onTextChanged": "{{JSObject1.myFun2();}}",
   "parentColumnSpace": 12.5,
   "parentId": "0",
   "parentRowSpace": 10,

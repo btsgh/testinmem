@@ -35,7 +35,7 @@
     "dynamicBindingPathList": [],
     "name": "getMessages",
     "pageId": "Customer messaging",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "select_cars",
     "pageId": "Schedule",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
